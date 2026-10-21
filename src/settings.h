@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-3.0-only */
-#ifndef SOLFA_SETTINGS_H
-#define SOLFA_SETTINGS_H
+#ifndef LUMIGTK_SETTINGS_H
+#define LUMIGTK_SETTINGS_H
 
 #include <stdbool.h>
 
@@ -18,7 +18,7 @@ struct app_settings {
 	int colors[3][3];		/* 配色：主色、辅色、强调色（RGB） */
 };
 
-/* 读取 ~/.config/solfa/settings.ini，缺失项使用默认值 */
+/* 读取 ~/.config/lumigtk/settings.ini，缺失项使用默认值 */
 void settings_load(struct app_settings *s);
 void settings_save(const struct app_settings *s);
 

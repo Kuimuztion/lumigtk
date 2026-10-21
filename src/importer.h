@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-3.0-only */
-#ifndef SOLFA_IMPORTER_H
-#define SOLFA_IMPORTER_H
+#ifndef LUMIGTK_IMPORTER_H
+#define LUMIGTK_IMPORTER_H
 
 #include <stdbool.h>
 
@@ -14,7 +14,7 @@ typedef void (*import_done_fn)(bool ok, const char *message,
  * 没有则返回 NULL；返回值需 g_free()。 */
 char *importer_extract_url(const char *text);
 
-/* 在后台线程中下载视频（/tmp）并转换为 flac（~/.config/solfa/audio） */
+/* 在后台线程中下载视频（/tmp）并转换为 flac（~/.config/lumigtk/audio） */
 void importer_start(const char *url, import_progress_fn progress,
 		    import_done_fn done, void *data);
 

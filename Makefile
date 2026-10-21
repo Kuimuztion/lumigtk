@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
-APP_ID := dev.solfa.app
-TARGET := solfa
+APP_ID := dev.lumigtk.app
+TARGET := lumigtk
 PREFIX ?= /usr/local
 CC ?= cc
 SRCS := src/main.c src/common.c src/settings.c src/player.c src/importer.c

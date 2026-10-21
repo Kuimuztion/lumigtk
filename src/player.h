@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-3.0-only */
-#ifndef SOLFA_PLAYER_H
-#define SOLFA_PLAYER_H
+#ifndef LUMIGTK_PLAYER_H
+#define LUMIGTK_PLAYER_H
 
 #include <stdbool.h>
 #include <stdint.h>

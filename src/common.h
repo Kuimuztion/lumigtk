@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-3.0-only */
-#ifndef SOLFA_COMMON_H
-#define SOLFA_COMMON_H
+#ifndef LUMIGTK_COMMON_H
+#define LUMIGTK_COMMON_H
 
 #include <stdbool.h>
 #include <stddef.h>
 
-#define APP_NAME	"solfa"
-#define TMP_VIDEO_DIR	"/tmp/solfa/video"
-#define TMP_WORK_DIR	"/tmp/solfa/work"
+#define APP_NAME	"lumigtk"
+#define TMP_VIDEO_DIR	"/tmp/lumigtk/video"
+#define TMP_WORK_DIR	"/tmp/lumigtk/work"
 
 /* 以下返回的字符串由调用者 g_free() */
-char *config_dir(void);		/* ~/.config/solfa */
-char *audio_dir(void);		/* ~/.config/solfa/audio */
-char *cookies_path(void);	/* ~/.config/solfa/cookies.txt，不存在则 NULL */
+char *config_dir(void);		/* ~/.config/lumigtk */
+char *audio_dir(void);		/* ~/.config/lumigtk/audio */
+char *cookies_path(void);	/* ~/.config/lumigtk/cookies.txt，不存在则 NULL */
 char *tail_text(const char *s, size_t max);
 char *error_message(const char *prefix, const char *err);
 char *last_line(const char *s);

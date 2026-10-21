@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-3.0-only */
 /*
- * solfa: GTK4 本地音乐播放器，从剪贴板导入 B 站 / 抖音 / 快手视频链接。
+ * lumigtk: GTK4 本地音乐播放器，从剪贴板导入 B 站 / 抖音 / 快手视频链接。
  */
 #include <glib/gstdio.h>
 #include <gtk/gtk.h>
@@ -844,9 +844,9 @@ static void build_ui(GtkApplication *app)
 	GtkWidget *spacer;
 
 	window = gtk_application_window_new(app);
-	gtk_window_set_title(GTK_WINDOW(window), "solfa");
+	gtk_window_set_title(GTK_WINDOW(window), "LUMIGTK");
 	gtk_window_set_default_size(GTK_WINDOW(window), 960, 680);
-	gtk_widget_add_css_class(window, "solfa");
+	gtk_widget_add_css_class(window, "lumigtk");
 	g_signal_connect(window, "destroy", G_CALLBACK(on_window_destroy), NULL);
 
 	/* 标题栏：右上角只保留导入 */
@@ -988,7 +988,7 @@ int main(int argc, char **argv)
 	}
 	tracks = g_ptr_array_new_with_free_func(g_free);
 
-	app = gtk_application_new("dev.solfa.app", G_APPLICATION_DEFAULT_FLAGS);
+	app = gtk_application_new("dev.lumigtk.app", G_APPLICATION_DEFAULT_FLAGS);
 	g_signal_connect(app, "activate", G_CALLBACK(on_activate), NULL);
 	status = g_application_run(G_APPLICATION(app), argc, argv);
 

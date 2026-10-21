@@ -1,6 +1,8 @@
-# Solfa
+# LUMIGTK
 
-Solfa 是一个基于 GTK4 与 GStreamer 的本地音乐播放器，目标环境为 Fedora（Plasma 桌面）。
+LUMIGTK: Unique Music & Internet GTK Tracker for Kernels
+
+基于 GTK4 与 GStreamer 的本地音乐播放器，目标环境为 Fedora（Plasma 桌面）。
 支持从剪贴板导入 B 站、抖音、快手的视频链接，下载后用 ffmpeg 转换为无损 FLAC 音频。
 
 许可证：GPL-3.0-only，详见 [LICENSE](LICENSE)。
@@ -18,21 +20,22 @@ sudo dnf install ffmpeg        # 需要先启用 RPM Fusion (free)
 ```bash
 make
 sudo make install          # 安装二进制、桌面文件与图标，不触碰用户数据
-solfa
+lumigtk
 sudo make uninstall        # 卸载
 ```
 
 ## 目录约定
 
-- 视频临时文件：`/tmp/solfa/video/`
-- 音频（flac）：`~/.config/solfa/audio/`，重新编译或安装不会覆盖或删除
-- 设置：`~/.config/solfa/settings.ini`
-- Cookie（可选）：`~/.config/solfa/cookies.txt`，Netscape 格式
+- 视频临时文件：`/tmp/lumigtk/video/`
+- 音频（flac）：`~/.config/lumigtk/audio/`，重新编译或安装不会覆盖或删除
+- 设置：`~/.config/lumigtk/settings.ini`
+- Cookie（可选）：`~/.config/lumigtk/cookies.txt`，Netscape 格式
 
-如果你之前使用的是旧名称 fmusic，可以把旧数据目录迁移过来：
+如果你之前使用的是旧名称 fmusic 或 solfa，可以把旧数据目录迁移过来：
 
 ```bash
-mv ~/.config/fmusic ~/.config/solfa
+mv ~/.config/fmusic ~/.config/lumigtk    # 来自 fmusic
+mv ~/.config/solfa ~/.config/lumigtk     # 来自 solfa
 ```
 
 ## 使用
@@ -45,4 +48,4 @@ mv ~/.config/fmusic ~/.config/solfa
 
 ## 图标
 
-`data/dev.solfa.app.svg` 基于 `gnome-music.svg` 制作。原始图标的授权以其来源为准，发布前请确认其授权条款，必要时替换为自己的图标。
+`data/dev.lumigtk.app.svg` 基于 `gnome-music.svg` 制作。原始图标的授权以其来源为准，发布前请确认其授权条款，必要时替换为自己的图标。

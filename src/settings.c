@@ -26,7 +26,7 @@ static const int white[3] = { 255, 255, 255 };
 static GtkCssProvider *css_provider;
 
 static const char *static_rules =
-	"window.solfa { background-color: @fm_bg; color: @fm_fg; }\n"
+	"window.lumigtk { background-color: @fm_bg; color: @fm_fg; }\n"
 	".panel { background-color: @fm_panel; border-radius: 12px;"
 	" padding: 10px; }\n"
 	".panel viewport, .panel list, .panel row {"
@@ -455,7 +455,7 @@ void settings_apply(const struct app_settings *s)
 
 	if (uri)
 		g_string_append_printf(css,
-			"window.solfa.wallpaper { background-image: url(\"%s\");"
+			"window.lumigtk.wallpaper { background-image: url(\"%s\");"
 			" background-size: cover; background-position: center; }\n",
 			uri);
 	g_string_append(css, static_rules);

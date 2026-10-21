@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=Solfa
+Name=LUMIGTK
 Comment=Local music player with video link import
-Exec=solfa
-Icon=dev.solfa.app
-StartupWMClass=dev.solfa.app
+Exec=lumigtk
+Icon=dev.lumigtk.app
+StartupWMClass=dev.lumigtk.app
 Terminal=false
 Categories=AudioVideo;Audio;Player;
