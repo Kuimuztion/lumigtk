@@ -9,10 +9,24 @@ LUMIGTK: Unique Music & Internet GTK Tracker for Kernels
 
 ## 依赖
 
+# Fedora / RHEL (推荐)
 ```bash
 sudo dnf install gcc make pkgconf-pkg-config gtk4-devel gstreamer1-devel \
 	gstreamer1-plugins-base gstreamer1-plugins-good yt-dlp curl
 sudo dnf install ffmpeg        # 需要先启用 RPM Fusion (free)
+```
+
+# ArchLinux / Manjaro
+``` bash
+sudo pacman -S --needed base-devel gtk4 gstreamer \
+	gst-plugins-base gst-plugins-good yt-dlp curl ffmpeg
+```
+
+# Debian / Ubuntu
+```bash
+sudo apt update
+sudo apt install -y build-essential pkg-config libgtk-4-dev libgstreamer1.0-dev \
+	libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-good yt-dlp curl ffmpeg
 ```
 
 ## 编译与安装
@@ -30,13 +44,6 @@ sudo make uninstall        # 卸载
 - 音频（flac）：`~/.config/lumigtk/audio/`，重新编译或安装不会覆盖或删除
 - 设置：`~/.config/lumigtk/settings.ini`
 - Cookie（可选）：`~/.config/lumigtk/cookies.txt`，Netscape 格式
-
-如果你之前使用的是旧名称 fmusic 或 solfa，可以把旧数据目录迁移过来：
-
-```bash
-mv ~/.config/fmusic ~/.config/lumigtk    # 来自 fmusic
-mv ~/.config/solfa ~/.config/lumigtk     # 来自 solfa
-```
 
 ## 使用
 
