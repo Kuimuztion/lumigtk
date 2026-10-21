@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Solfa
+Comment=Local music player with video link import
+Exec=solfa
+Icon=dev.solfa.app
+StartupWMClass=dev.solfa.app
+Terminal=false
+Categories=AudioVideo;Audio;Player;
